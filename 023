@@ -1,0 +1,23 @@
+#ler o peso de N pessoas, mostrar qual foi o maior e o menor peso lidos.
+
+n1=int(input("numero de pessoas que serão comparados:"))
+mai=0
+men=0
+
+for i in range (0,n1):
+    n3=float(input("peso da pessoa {}: ".format(i+1)))
+    
+    if i==0:
+        mai=n3
+        men=n3
+        
+    else:
+        if n3>mai:
+            mai=n3
+        
+        else:
+            men=n3
+print('''
+maior = {}
+menor = {}
+'''.format(mai,men))
