@@ -1,0 +1,14 @@
+#get the person's  name,  age and show if it is old or young
+
+lista=dict()
+
+lista["nome"]=str(input("nome aluno: "))
+lista["idade"]=int(input("idade do aluno: "))
+
+if 18>=lista["idade"]:
+    lista["faixa"]="menor de idade"
+else:
+    lista["faixa"]="maior de idade"
+    
+for a, b in lista.items():
+    print(f" {a}  é {b}" )
