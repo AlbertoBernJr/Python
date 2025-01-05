@@ -1,0 +1,10 @@
+#Construir uma tabuada usando o número escolhido pelo usuário
+
+n=int(input("Diga o numero da sua tabuada: "))
+
+if n>=0:
+    for i in range(1,11):
+        result=n*i
+        print("{} x {} = {}".format(n,i,result))
+else:
+    print("número inválido")
