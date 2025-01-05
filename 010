@@ -1,0 +1,20 @@
+'''
+O computador vai escolher um número inteiro entre 0 e 5 
+e o usuário tem que descobrir o número escolhido pelo computador.
+'''
+
+from random import randint
+num = randint(0,5)
+
+print('--='*15)
+print("Adivinhe o número que estou pensando...")
+print('--='*15)
+
+escolha=str(input("numero: "))
+
+if num == escolha:
+    print("acertou o número!")
+    print("numero = {}".format(num))
+else:
+    print("número errado!")
+    print("tente novamente.")
