@@ -1,0 +1,16 @@
+'''
+Ler a distância de uma viagem em Km.
+Calcular o preço da passagem, cobrando R$0,50 por Km para viagens de até 200Km e 
+R$0,45 parta viagens mais longas.
+'''
+
+dist=float(input("distancia: "))
+p1=0.50
+p2=0.45
+
+if dist<=200:
+    pf=p1*dist
+    print("o preço da passagem é de: R${:.2f}".format(pf))
+else:
+    pf=p2*dist
+    print("o preço da passagem é de: R${:.2f}".format(pf))
