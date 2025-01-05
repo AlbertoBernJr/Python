@@ -1,0 +1,15 @@
+'''
+Ler a velocidade de um carro. 
+Se ele ultrapassar 80Km/h, mostre uma mensagem dizendo que ele foi multado. 
+A multa vai custar R$7,00 por cada Km acima do limite.
+'''
+
+vel=float(input("velocidade: "))
+
+if vel>80:
+    print("Ultrapassou o limite de 80km!")
+    multa=vel-80
+    multa=multa*7
+    print("voce foi multado em: R${}".format(multa))
+else:
+    print("Está no limite de velocidade 80km")
