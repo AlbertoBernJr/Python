@@ -1,0 +1,8 @@
+#ler o nome de uma cidade diga se ela começa ou não com o nome “SANTO”
+
+nome=str(input("nome da cidade:"))
+nome=nome.lower()
+nome=nome.strip()
+nome1=nome[:5]
+
+print("começa com a palavra <santo> ? = {}".format("santo" in nome1))
