@@ -1,0 +1,27 @@
+'''
+ler o ano de nascimento, dizer quanto tempo pasosu ou falta para o alistamento militar, e informar 
+o ano no qual teve que se alistar.
+'''
+
+from datetime import date
+atual=date.today().year
+
+ano=int(input("ano de nascimento "))
+
+idade=atual-ano
+
+if idade<18:
+    tempo=18-idade
+    tempo2=tempo+atual
+    print("faltam {} anos para se alistar = {}".format(tempo,tempo2))
+    
+elif idade==18:
+    print("Já esta na hora de se alistar!")
+    
+elif idade>18:
+    tempo=idade-18
+    tempo2=atual-tempo
+    print("Seu alistamento foi a {} anos atras = {}.".format(tempo,tempo2))
+
+else:
+    print("inválido!")
