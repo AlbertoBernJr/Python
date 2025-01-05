@@ -1,0 +1,11 @@
+#ler o primeiro termo, a razão de uma PA e mostre os 10 primeiros termos da PA
+
+n1=int(input("primeiro termo: "))
+raz=int(input("razão da PA: "))
+
+#formula do ultimo termo
+n10=n1+(10-1)*raz
+
+for i in range(n1,n10,raz):
+    print("{} ->".format(i), end=" ")
+print("terminou")
