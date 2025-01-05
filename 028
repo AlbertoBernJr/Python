@@ -1,0 +1,8 @@
+#receive the altitude, wide of a square land and show the surface
+def terreno(a, b):
+    area = a * b 
+    print(f"a área do terreno ({a} x {b}) = {area}")
+
+larg=float(input("Largura: "))
+alt=float(input("altura: "))
+terreno(larg, alt)
