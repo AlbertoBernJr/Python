@@ -1,0 +1,3 @@
+valor=float(input("temperatura em Celcius: ")
+resultado=(valor*9/5)+32
+print("Temperatura em fahrenheit = {:.2f}".format(resultado))
