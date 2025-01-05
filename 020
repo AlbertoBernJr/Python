@@ -1,0 +1,11 @@
+#ler 6 números inteiros e mostrar a soma dos valores pares
+
+result=0
+soma=0
+for i in range (1,7):
+    n=int(input(" {} numero: ".format(i)))
+    
+    if n%2==0:
+        soma=soma+n
+print("-+"*10)
+print("a soma dos numeros pares = {}".format(soma))   
