@@ -1,0 +1,21 @@
+nome=str(input("nome: "))
+nome=nome.strip()
+
+#O nome com todas as letras maiúsculas e minúsculas
+nome3=nome.upper()
+print("nome em maiusculo = {}".format(nome3))
+
+nome4=nome.lower()
+print("nome em minusculo = {}".format(nome4))
+
+#Quantas letras ao todo (sem considerar espaços)
+nome2=nome.split()
+comp=''.join(nome2)
+
+print("o numero de letras totais = {}".format(len(comp)))
+
+#Quantas letras tem o primeiro nome.
+lista=nome.split()
+primeiro=lista[0]
+
+print("a primeira unidade do nome tem {} letras".format(len(primeiro)))
