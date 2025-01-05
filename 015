@@ -1,0 +1,31 @@
+nome=str(input("nome: "))
+nome=nome.strip()
+nome=nome.lower()
+
+#primeiro vazio
+vazio1=nome.find(" ")
+
+#utimo vazio
+vazio2=nome.rfind(" ")
+
+#primeiro nome
+print("primeiro nome = {}".format(nome[:vazio1]))
+
+#ultimo nome
+print("ultimo nome = {}".format(nome[vazio2:]))
+
+# ------------------- OU ------------------
+
+nome=str(input("nome: "))
+nome=nome.strip()
+nome=nome.lower()
+
+nome=nome.split()
+nome1=nome[0]
+print("primeiro nome = {}".format(nome1))
+
+#comprimento do nome
+comp=len(nome)-1
+
+nome2=nome[comp]
+print("ultimo nome = {}".format(nome2))
