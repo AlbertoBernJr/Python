@@ -1,0 +1,16 @@
+'''
+Ler o salário de um funcionário e calcular o valor do seu aumento. 
+Para salários superiores a R$1250,00, calcular um aumento de 10%. 
+Para os inferiores ou iguais, o aumento é de 15%.
+'''
+
+n=float(input("salário: "))
+
+if n>1250:
+    n=(110*n)/100
+    
+else:
+    n=(115*n)/100
+    
+    
+print("aumento de = {:.2f}".format(n))
