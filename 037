@@ -1,0 +1,34 @@
+from random import randint
+import operator
+from time import sleep
+
+a = tuple(randint(1, 10) for i in range(3))
+
+dic={
+    "J1": a[0],
+    "J2": a[1],
+    "J3": a[2]
+}
+
+print(f"jogador 1 tirou o numero = {dic['J1']}")
+print(f"jogador 2 tirou o numero = {dic["J2"]}")
+print(f"jogador 3 tirou o numero = {dic["J3"]}")
+
+#dicionario em ordem
+sortedDic = sorted(dic.items(), key=operator.itemgetter(1), reverse=True)
+#key=operator.itemgetter(1) especifica que a 
+# chave de comparação é o valor do dicionário, enquanto que 
+# operator.itemgetter(0) tem a chave de comparação da chave do dicionário.
+
+print("-"*15)
+for i, v in enumerate(sortedDic):
+    print(f"{i+1} lugar = {v[0]} com {v[1]}")
+    sleep(1)
+''' 
+outro modo de exibir:
+
+print("-"*15)
+print(f"1 lugar = jogador {sortedDic[0][0]} com o numero {sortedDic[0][1]} ")  
+print(f"2 lugar = jogador {sortedDic[1][0]} com o numero {sortedDic[1][1]} ") 
+print(f"3 lugar = jogador {sortedDic[2][0]} com o numero {sortedDic[2][1]} ")
+'''
