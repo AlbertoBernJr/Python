@@ -1,0 +1,13 @@
+Make a tupla with names and show:
+rank=("four", "tris", "will", "christ", "peter", "eric")
+print(f"the firsts 3 ranks: {rank[:3]}")
+print("-+"*15)
+
+print(f"the lasts 3 ranks: {rank[-3:]}")
+print("-+"*15)
+
+print(f"the alphabetic order of the ranks: {sorted(rank)}")
+print("-+"*15)
+
+
+print(f'WILL's position: {rank.index("will")}')
