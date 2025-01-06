@@ -1,0 +1,30 @@
+#get the person's name, age and show the person that is lower and old
+
+lista1=list()
+lista2=list()
+TPes=0
+
+n=int(input("Quantas pessoas serão cadastradas? "))
+print("+"*15)
+
+for a in range (0,n):
+	lista1.append(str(input("nome: ")))
+	lista1.append(int(input("idade: ")))
+	print("-"*15)
+	lista2.append(lista1[:])
+	
+	lista1.clear()
+
+print("="*15)
+print("Pessoas maiores de 18:")	
+for b in range(0,n):
+    id=lista2[b][1]
+    if id >= 18:
+        print(lista2[b][0])
+        
+print("="*15)
+print("Pessoas menores de 18:")	  
+for c in range(0,n):
+    id=lista2[c][1]
+    if id < 18:
+        print(lista2[b][0])
