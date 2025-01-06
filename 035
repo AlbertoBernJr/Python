@@ -1,0 +1,17 @@
+'''
+ex python 67 - função while
+Tabuada que recebe o valor do usuário e tenha uma mecanismo de encerramento
+'''
+
+continuar="s"
+n=1
+
+while n>0 and continuar == "s":
+    n2=int(input("tabuada de qual numero? "))
+    
+    for n in range (1,11):
+        resultado=n*n2
+        print(f"{n2} x {n} = {resultado}")
+    print("-"*10)
+    
+    continuar=input("deseja continuar [s/n]?")
