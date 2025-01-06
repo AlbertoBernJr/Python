@@ -1,4 +1,3 @@
-#85 python
 lista=list()
 
 for i in range(0,3):
@@ -30,3 +29,23 @@ listaP.sort()
 print("-"*20)       
 print(f"valores pares = {listaP}")
 print(f"valores impares = {listaI}")
+
+'''
+<OUTRO MODO DE FAZER>
+- criando uma unica lista com duas listas dentro
+
+lista=[[],[]]
+
+v=0
+for i in range(0,3):
+    v=int(input(f"valor da posição {i}: "))
+    if v%2==0:
+        lista[0].append(v)
+    else:
+        lista[1].append(v)
+
+lista[1].sort()
+lista[0].sort()
+print(f"valores impares = {lista[1]}")
+print(f"valores pares = {lista[0]}")
+'''
