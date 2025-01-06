@@ -1,0 +1,17 @@
+#gerar 5 valores aleatorios em uma tupla, exibir os numeros, identificar o maior e o menor valor
+
+from random import randint
+
+a = tuple(randint(1, 10) for i in range(5))
+"""
+- randint(1, 10) = sorteará um numero entre 1 e 10
+- for i in range(5) = repetira o sorteio 5 vezes
+"""
+
+print(f"tupla embaralhada = {a}")
+
+ordenada = sorted(a)
+print(f"tupla em ordem = {ordenada}")
+
+print(f"o maior valor = {ordenada[4]}")
+print(f"o menor valor = {ordenada[0]}")
