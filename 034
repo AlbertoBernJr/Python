@@ -1,0 +1,13 @@
+#Gerar 5 valores aleatorios em uma tupla
+
+from random import randint
+
+a = tuple(randint(1, 10) for i in range(5))
+
+"""
+ou
+a = tuple(randint(1, 10), randint(1, 10), randint(1, 10) )
+"""
+
+
+print(a)
