@@ -1,0 +1,25 @@
+#Guardar 3 valores digitados pelo usuário em uma lista. Após, mostre o maior, menor valor e suas posições dentro da lista.
+
+lista=list()
+
+for i in range(0,3):
+    lista.append(int(input(f"valor da posição {i}: ")))
+
+print(lista)
+print("-"*10)
+
+max=max(lista)
+min=min(lista)
+
+print(f"maior valor é o [{max}] e esta na posição:",end=" ")
+for i,v in enumerate(lista):
+    #i=indice; v=valor -> percorrerá toda a lista
+    #[enumerate] precisa do valor index (i) e o valor (v) em sequencia
+    if v == max:
+        print(f" {i}...",end="")
+     
+print( )   
+print(f"menor valor é o [{min}] e esta na posição:",end=" ")
+for i,v in enumerate(lista):
+    if v == min:
+        print(f" {i}...",end="")
